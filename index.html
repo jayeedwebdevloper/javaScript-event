@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript event</title>
+</head>
+
+<body>
+    <button id="dark" onmouseover="hover(this)" onmouseout="noHover(this)" onclick="change()">Dark mode</button>
+    <button id="lite" onmouseover="hover2(this)" onmouseout="noHover2(this)" onclick="change2()">Light mode</button>
+    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quam enim sint illo in nihil
+        temporibus rerum, facere ex id molestiae vel eum? Dolor tempora qui tempore excepturi, architecto fugit? Lorem,
+        ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum commodi consectetur! Ducimus, culpa eveniet.</p>
+    <section>
+        <div id="comment">
+            <h3>Enter your text</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quos labore quis? Ut dolorum facere est
+                alias
+                cum, tempore, fugiat placeat adipisci velit, esse dignissimos. Esse atque ipsam quidem. Libero.</p>
+        </div>
+        <div id="commentArea" style="display: flex; align-items: center;"><textarea style="margin-right: 10px;"
+                onfocus="" id="text" cols="50" rows="4"></textarea> <button id="post" onmouseover="hover2(this)"
+                onmouseout="noHover3(this)">Post
+                Here</button></div>
+    </section>
+    <section style="padding: 15px 0; overflow: hidden; margin-top: 20px;">
+
+        <p id="cnfm">You successfully changed the password!!</p>
+
+        <div id="password">
+            <label for="npassword">New Password</label> <br>
+            <input id="npassword" type="password" placeholder="Enter new password"><br>
+            <label for="cpassword">Confirm Password</label> <br>
+            <input id="cpassword" type="password" placeholder="Confirm password"><br>
+            <button id="confirm" disabled>Confirm</button>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
